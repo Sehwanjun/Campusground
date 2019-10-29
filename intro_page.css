@@ -1,0 +1,649 @@
+﻿/*<!-- 타이틀 스타일-->*/
+
+
+
+
+    /*<!-- 헤더 -->*/
+
+    #main_header {
+        width: 1128px;
+        height: auto;
+        padding: 15px 18px;
+        margin: 0 auto;
+        align-items: center;
+        overflow: hidden;
+        
+        
+        display: flex; /*flex 관련 기본*/
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main_header_logo {
+        flex-basis: 928px;
+        width: 60px;
+        height: 60px;
+        /*position: relative;
+        left: 0px;
+        top: 0px;
+        display:table-cell; vertical-align:middle;*/ 
+    }
+
+    #logo, #logodiv  {
+        height: 60px; width: 60px;
+        position: relative;
+    }
+
+    /*<!-- 해더 메뉴(로그인 및 회원가입) -->*/
+    #header_jnl {
+        width: 200px;
+        margin: 0px 8px;
+        padding: 9.6px 0;
+        align-items: center; 
+
+    }
+
+    #header_jnl > ul > li {
+        float: left;
+    }
+
+    #header_jnl > ul > li > a {
+        padding: 2px 10px;
+
+        font-size: 20px;
+        color: #4c4c4c
+    }
+
+    #header_jnl > ul > li > a:hover {
+        background: #666666;
+        color: white;
+    }
+
+    #button_login {
+        margin: 0px 0px;
+        border: 1px #666666;
+        border-radius: 3px 3px;
+    }
+
+
+    #button_joinus {
+        margin: 0px 8px;
+        border: 1px #666666;
+        border-radius: 3px 3px; 
+    }
+
+
+    /* 본섹션 - 사이트안내 및 통합검색 */
+    #intro_section {
+        width: 1128px;
+        height: 420px;
+        padding: 42px 18px;
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: #e9feff;
+        
+        display: flex; /*flex 관련 기본*/
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #intro_text {
+        min-width:50%;
+        width: 50%;
+        margin: auto 0;
+        padding: 32px 120px 32px 0;
+        /*flex: 1 2 auto;
+        flex-basis: 200px;*/
+    }
+
+    .intro_comname{
+        color: #3572ab;
+    }
+    
+
+    /*검색바 관련*/
+
+    .box{
+        margin: 100px auto;
+        width: 350px;
+        height: 50px;
+    }
+
+    .container-1{
+        overflow: hidden;
+        width: 350px;
+        vertical-align: middle;
+        white-space: nowrap;
+        border: none;
+
+    }
+
+        .container-1 input#search {
+            width: 300px;
+            height: 50px;
+            background: #91cef0;
+            border: none;
+            font-size: 12pt;
+            float: left;
+            color: #4c4c4c;
+            padding-left: 15px;
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            -moz-border-radius-bottomleft: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    
+    .container-1 input#search::-webkit-input-placeholder {
+        color: #ffffff;
+    }
+ 
+    .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+        color: #ffffff;  
+    }
+ 
+    .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+        color: #ffffff;  
+    }
+ 
+    .container-1 input#search:-ms-input-placeholder {  
+        color: #ffffff;  
+    }
+
+        .container-1 button.icon {
+            cursor: pointer;
+            -webkit-border-top-right-radius: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+            -moz-border-radius-topright: 5px;
+            -moz-border-radius-bottomright: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            border: none;
+            background: #3572ab;
+            height: 50px;
+            width: 50px;
+            color: #d7d7d7;
+            font-size: 12pt;
+        }
+
+        .container-1:hover button.icon, .container-1:active button.icon, .container-1:focus button.icon{
+            outline: none;
+        }
+ 
+        .container-1:hover button.icon:hover{
+            background: white;
+        }
+
+
+/*검색바 아래에 추천단어*/
+#recommend {
+    margin-top: 1px;
+    position: absolute;
+    background: white;
+    padding: 0 10px;
+}
+
+.item {
+    height: 1.8em;
+    width: 220px;
+    outline: none;
+}
+
+    .item:hover {
+        color: #9baec8;
+    }
+
+.text {
+    font-weight: bold;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+    .big_bg {
+        width: 1128px;
+        padding: 0 18px;
+        margin: 0 auto;
+        height: auto;
+        display: block;
+        background-color: #e9feff;
+    }
+
+
+/*메인섹션(2번째칸부터)*/
+
+     .main_section {
+        width: 1128px;
+        padding: 42px 18px 0 18px;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex; /*flex 관련 기본*/
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+ /* 본섹션2 - 학습사이트 안내 */
+     #eduinfo_text{
+        flex: 2 1 auto;
+        align-self:center;
+        flex-basis: 400px;
+        order: 1;
+        min-height: 300px;
+
+     }
+
+     #eduinfo_addinfo{
+        flex: 1 1 auto;
+        align-self:center;
+        flex-basis: 440px;
+        order: 2;
+        display: inline-flex;
+        flex-wrap: wrap;
+     }
+
+ 
+     #eduinfo_linkdiv{
+        flex: 2 1 auto;
+        align-self:center;
+        flex-basis: 180px;
+        order: 3;
+
+     }
+
+     #eduinfo_link_button{
+         margin: 0, 0, 0, 12px;
+     }
+
+     #eduinfo_bg{
+        flex: 1 1 auto;
+        align-self:center;
+        order: 4;
+
+     }
+
+/* 본섹션3 - 커뮤니티 안내 */
+
+     #community_text{
+        flex: 2 1 auto;
+        align-self:center;
+        flex-basis: 400px;
+        min-height: 320px;
+        order: 1;
+     }
+
+     #community_addinfo{
+        flex: 1 1 auto;
+        align-self:center;
+        flex-basis: 440px;
+        order: 2;
+     }
+
+     #community_linkdiv{
+        flex: 2 1 auto;
+        align-self:center;
+        flex-basis: 180px;
+        order: 3;
+     }
+
+     #community_link_button{
+         margin: 0, 0, 0, 12px;
+     }
+
+     #community_bg{
+        flex: 1 1 auto;
+        align-self:center;
+        order: 4;
+     }
+
+
+
+/* 본섹션4 - 취업정보 안내 */
+
+#job_text {
+    flex: 2 1 auto;
+    align-self: center;
+    flex-basis: 400px;
+    min-height: 320px;
+    order: 1;
+}
+
+#job_addinfo {
+    flex: 1 1 auto;
+    align-self: center;
+    flex-basis: 440px;
+    order: 2;
+}
+
+#job_linkdiv {
+    flex: 2 1 auto;
+    align-self: center;
+    flex-basis: 180px;
+    order: 3;
+}
+
+#job_link_button {
+    margin: 0, 0, 0, 12px;
+}
+
+#job_bg {
+    flex: 1 1 auto;
+    align-self: center;
+    order: 4;
+}
+
+
+
+/* 본섹션5 - 내 지식전파 정보 안내 */
+
+#guru_text {
+    flex: 2 1 auto;
+    align-self: center;
+    flex-basis: 400px;
+    min-height: 320px;
+    order: 1;
+}
+
+#guru_addinfo {
+    flex: 1 1 auto;
+    align-self: center;
+    flex-basis: 440px;
+    order: 2;
+}
+
+#guru_linkdiv {
+    flex: 2 1 auto;
+    align-self: center;
+    flex-basis: 180px;
+    order: 3;
+}
+
+#guru_link_button {
+    margin: 0, 0, 0, 12px;
+}
+
+#guru_bg {
+    flex: 1 1 auto;
+    align-self: center;
+    order: 4;
+}
+
+/*footer 하단 양식*/
+
+.footer_list {
+    display: flex;
+    width: 1128px;
+    padding: 24px 18px 0 18px;
+    overflow: hidden;
+    margin: 0 auto;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(246, 243, 224, 1);
+    justify-content: space-around;
+}
+    #company_info{
+
+    }
+
+        #buttom_logo{
+
+        }
+
+    #list_part{
+
+
+    }
+
+    .list_link{
+        font-size: 15px;
+        font-weight: 500;
+        color: #666666;
+        line-height: 24px;
+
+    }
+
+        .list_ul {
+            font-size: 18px;
+            font-weight: 600;
+            color: #666666;
+            
+            line-height: 50px;
+        }
+
+            .footer_link{
+                font-size: 15px;
+                font-weight: 500;
+                color: #666666;
+
+            }
+
+
+#copyright{
+        width: 1128px;
+        padding: 24px 18px;
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: none;
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+}
+
+.notification {
+    font-size: 14px !important;
+    color: #6364d8;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.copyright_bottom {
+    font-size: 16px !important;
+    color: #666666;
+    margin-bottom: 3px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 초기화 작업 */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none outside none;
+}
+
+    h1{font-size: 64px; line-height: 1.1em;}
+    h2{font-size: 32px; line-height: 1.1em;}
+    h3{font-size: 24px; line-height: 1.1em; color: rgba(0, 0, 0, 0.6)}
+    h4{font-size: 16px; line-height: 1.1em;}
+
+    body {
+        line-height: 1;
+    }
+
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    blockquote, q {
+        quotes: none;
+    }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+    a {
+        margin: 0;
+        padding: 0;
+        font-size: 120%;
+        vertical-align: baseline;
+        background: transparent;
+        color: black;
+        text-decoration: none;
+    }
+
+    /* change colours to suit your needs */
+    ins {
+        background-color: #ff9;
+        color: #000;
+        text-decoration: none;
+    }
+
+    /* change colours to suit your needs */
+    mark {
+        background-color: #ff9;
+        color: #000;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    del {
+        text-decoration: line-through;
+    }
+
+    abbr[title], dfn[title] {
+        border-bottom: 1px dotted;
+        cursor: help;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* change border colour to suit your needs */
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #cccccc;
+        margin: 0.3em 0;
+        padding: 0;
+    }
+
+    input, select {
+        vertical-align: middle;
+    }
+
+
+    #wrap {
+        width: 1000px;
+        height: 100px;
+    }
+
+    #nav {
+        width: 1000px;
+        height: 100px;
+    }
+
+    #side {
+        width: 1000px;
+        height: 100px;
+    }
+
+    #contents {
+        width: 1000px;
+        height: 100px;
+    }
+
+    #footer {
+        width: 1000px;
+        height: 100px;
+    }
+
+
+    /*<!-- 컨텐츠 내부의 버튼 -->*/
+
+.button {
+    line-height: 1.33333;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    min-height: 42px;
+    height: auto;
+    width: auto;
+    float: left;
+    box-shadow: none;
+    border-radius: 34px;
+    padding: 4px 20px;
+    color: #612833;
+    background-color: rgba(180,209,78,0.6);
+    margin: 0 8px 12px 0;
+    text-decoration: none;
+    opacity: 0.7;
+}
+    a.button:hover{
+        opacity: 1;
+    }
+
+.link_button {
+    line-height: 1;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 42px;
+    height: auto;
+    width: auto;
+    box-shadow: none;
+    border-radius: 12px;
+    padding: 8px 20px;
+    background-color: rgba(97, 40, 51, 1);
+    text-decoration: none;
+    border: none;
+    float: left;
+    opacity: 0.8;
+}
+
+    a.link_button:hover {
+        opacity: 1;
+
+    }

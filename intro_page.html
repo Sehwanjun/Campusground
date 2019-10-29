@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> CampusGround 가장 빠른 학습경로의 탐색부터 취업까지 </title>
+    <link rel="stylesheet" type="text/css" href="./css/intro_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--검색아이콘 가져오기-->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+
+        /*font-family: 'NotoSansKR';
+            src: local('NotoSansKR-Regular'),*/
+        /*url('//fonts.googleapis.com/earlyaccess/notosanskr.css'),
+                 url('NotoSans.ttf')*/
+
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <!-- 맨윗단 바 -->
+    <header id="main_header">
+
+        <div id="main_header_logo">
+            <a id="logodiv" href="#">
+                <img id="logo" src="./img/campusground_logo_60x60.png" height="60" width="60" />
+            </a>
+        </div>
+
+        <!-- 상단 회원가입 및 로그인 -->
+
+        <nav id="header_jnl">
+            <ul>
+                <li><a id="button_joinus" href="#"><b>회원가입</b></a></li>
+                <li><a id="button_login" href="#"><b>로그인</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 첫번째 섹션(기업소개) -->
+    <section id="intro_section">
+        <div id="intro_text">
+            <h1 class="intro_comname"><b>Campus Ground</b></h1><br />
+            <h2 class="added_info">함께 만들어가는 지식학습 캠퍼스</h2><br />
+            <h3 class="added_info2">최적의, 최단기의 효율을 이끌어내는</h3>
+            <h3 class="added_info2">학습경로를 확인하세요.</h3>
+        </div>
+
+        <!-- 검색바 생성!-->
+        <div class="box">
+            <div class="container-1">
+                <input type="search" method="get" action="/save.php" id="search" placeholder="찾는 직업 또는 교육명을 입력하세요." />
+                <button class="icon"><i class="fa fa-search"></i></button>
+                <div id="recommend" class="invisible">
+                    <div class="item"><span class="text"></span></div>
+                    <div class="item">추천단어 1 <span class="text"></span></div>
+                    <div class="item">추천단어 2 <span class="text"></span></div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="big_bg">
+        <img id="first_bg" src="first_bg.png" />
+    </div>
+
+
+
+    <!-- 두번째 섹션(학습페이지) -->
+    <section class="main_section">
+        <div id="eduinfo_text">
+            <h2 class="eduinfo" style="font-size: 2.8em">EduTree</h2><br />
+            <h3 class="added_info">학습관련 정보를 얻고</h3>
+            <h3 class="added_info2">나만의 학습계획을 세워보세요.</h3>
+        </div>
+        <div id="eduinfo_addinfo">
+            <a href="#" class="button">직업정보</a>
+            <a href="#" class="button">직업별 필요지식</a>
+            <a href="#" class="button">지식별 커리큘럼</a>
+            <a href="#" class="button">지식별 학습방법</a>
+            <a href="#" class="button">학습경로 확인</a>
+            <a href="#" class="button">학습정보 올리기</a>
+            <a href="#" class="button">기업별 요구수준</a>
+
+        </div>
+
+        <div id="eduinfo_linkdiv">
+            <a id="eduinfo_link_button" href="#" class="link_button">학습관리페이지</a>
+        </div>
+
+        <div id="eduinfo_bg">
+            <img id="eduinfo_image" src="http://placehold.it/1128X420/" height="420" width="1128" />
+
+        </div>
+    </section>
+
+
+    <!-- 세번째 섹션(커뮤니티) -->
+    <section class="main_section">
+        <div id="community_text">
+            <h2 class="community_info" style="font-size: 2.8em">동료들과 커뮤니티</h2><br />
+            <h3 class="added_info">학습관련 소식을 듣고</h3>
+            <h3 class="added_info2">동료들과 학습정보를 공유해보세요.</h3>
+        </div>
+        <div id="community_addinfo">
+            <a href="#" class="button">채용관련 소식</a>
+            <a href="#" class="button">직무지식 관련소식</a>
+            <a href="#" class="button">학습생 커뮤니티</a>
+            <a href="#" class="button">즐거운 학습생</a>
+            <a href="#" class="button">학습프로젝트 구성</a>
+        </div>
+
+        <div id="community_linkdiv">
+            <a id="community_link_button" href="#" class="link_button">커뮤니티 이동</a>
+        </div>
+
+        <div id="community_bg">
+            <img id="community_image" src="http://placehold.it/1128X420/" height="420" width="1128" />
+        </div>
+    </section>
+
+
+    <!-- 네번째 섹션(취업잡기) -->
+    <section class="main_section">
+        <div id="job_text">
+            <h2 class="job_info" style="font-size: 2.8em">채용정보 매칭</h2><br />
+            <h3 class="added_info">맞춤식 채용정보를 확인하고</h3>
+            <h3 class="added_info2">필요한 skill을 파악해보세요.</h3>
+        </div>
+        <div id="job_addinfo">
+            <a href="#" class="button">채용정보 확인</a>
+            <a href="#" class="button">기업별 요구능력</a>
+            <a href="#" class="button">나의 필요학습 파악</a>
+            <a href="#" class="button">나의 몸값 알아보기</a>
+            <a href="#" class="button">원하는 기업지원</a>
+        </div>
+
+        <div id="job_linkdiv">
+            <a id="job_link_button" href="#" class="link_button">취업공고 보기</a>
+        </div>
+
+        <div id="job_bg">
+            <img id="job_image" src="http://placehold.it/1128X420/" height="420" width="1128" />
+        </div>
+    </section>
+
+
+    <!-- 다섯번째 섹션(나의 지식 전파하기) -->
+    <section class="main_section">
+        <div id="guru_text">
+            <h2 class="guru_info" style="font-size: 2.8em">Guru에게 배우기 </h2><br />
+            <h3 class="added_info">내가 가진 지식을 바탕으로</h3>
+            <h3 class="added_info2">누군가에게 스승이 되어보세요.</h3>
+        </div>
+        <div id="guru_addinfo">
+            <a href="#" class="button">Guru가 되기</a>
+            <a href="#" class="button">Guru에게 배우기</a>
+            <a href="#" class="button">강의요청</a>
+        </div>
+
+        <div id="guru_linkdiv">
+            <a id="guru_link_button" href="#" class="link_button">Guru에게 배우기</a>
+        </div>
+
+        <div id="guru_bg">
+            <img id="guru_image" src="http://placehold.it/1128X420/" height="420" width="1128" />
+        </div>
+    </section>
+
+    <!-- footer 하단 기업소개 -->
+    <section class="footer_list">
+        <div id="company_info">
+            <div id="bottom_logo">
+                <img id="logo" src="./img/campusground_logo_60x60.png" height="60" width="60" />
+            </div>
+
+            <ul class="list_ul">
+                (주)캠퍼스그라운드
+
+                <li class="list_link">서울시 관악구 봉천로8길 11, 일화오피스텔 204호</li>
+                <li class="list_link">대표: 전세환 | 개인정보보호책임: 전세환</li>
+                <li class="list_link">사업자등록번호: 137-85-00000</li>
+                <li class="list_link">통신판매업 신고번호 : 2019-서울서초-0000호</li>
+                <li class="list_link">1544-0000 (평일 09:00 ~ 18:00 토요일 09:00 ~ 13:00)</li>
+                <li class="list_link">help@campusground.com</li>
+            </ul>
+        </div>
+
+
+        <div id="list_part">
+            <ul class="list_ul">
+                일반
+                <hr />
+                <li class="list_link"><a class="footer_link" href="#">가입</a></li>
+                <li class="list_link"><a class="footer_link" href="#">기업소개</a></li>
+                <li class="list_link"><a class="footer_link" href="#">채용</a></li>
+                <li class="list_link"><a class="footer_link" href="#">모바일</a></li>
+            </ul>
+        </div>
+
+        <div id="list_part">
+            <ul class="list_ul">
+                사이트 둘러보기
+                <hr />
+                <li class="list_link"><a class="footer_link" href="#">학습페이지</a></li>
+                <li class="list_link"><a class="footer_link" href="#">채용페이지</a></li>
+                <li class="list_link"><a class="footer_link" href="#">GURU페이지</a></li>
+                <li class="list_link"><a class="footer_link" href="#">마케팅(광고)</a></li>
+            </ul>
+        </div>
+
+        <div id="list_part">
+            <ul class="list_ul">
+                고객센터
+                <hr />
+                <li class="list_link"><a class="footer_link" href="#">공지사항</a></li>
+                <li class="list_link"><a class="footer_link" href="#">FAQ</a></li>
+                <li class="list_link"><a class="footer_link" href="#">이용약관</a></li>
+                <li class="list_link"><a class="footer_link" href="#">개인정보처리방침</a></li>
+                <li class="list_link"><a class="footer_link" href="#">1:1문의</a></li>
+            </ul>
+        </div>
+
+
+
+    </section>
+
+
+    <div id="copyright">
+        <hr />
+        <p class="notification">
+            캠퍼스그라운드는 통신판매중개자이며 통신판매의 당사자가 아닙니다.<br />
+            따라서 개별 판매자가 등록하여 판매한 모든 상품에 대한 거래 정보 및 거래에 대한 책임은 각 판매자가 부담하고, 이에 대하여 캠퍼스그라운드는 일체 책임지지 않습니다.
+        </p>
+        <p class="copyright_bottom">Copyright © CampusGround Inc. All rights reserved.</p>
+
+    </div>
+
+
+
+</body>
+</html>

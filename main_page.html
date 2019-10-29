@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" id="campusground" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title> CampusGround 실무지식을 위한 학습플랫폼 </title>
+    <link rel="stylesheet" type="text/css" href="./css/main_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--검색아이콘 가져오기-->
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f3e658d831.js" crossorigin="anonymous"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+
+        /*font-family: 'NotoSansKR';
+            src: local('NotoSansKR-Regular'),*/
+        /*url('//fonts.googleapis.com/earlyaccess/notosanskr.css'),
+                 url('NotoSans.ttf')*/
+
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body id="main_home">
+    <div class="main_space">
+        <header id="header_space">
+            <nav id="header_nav"> 
+ 
+                <!--네비바에 로고생성-->
+                <a id="main_logo_div" href="#">
+                    <img id="main_logo" src="./img/new_campusground_logo_42x42_rev.png" />
+                </a>
+
+                <!--검색창 생성!-->
+                <form id="search_bar" role="search" action="#" autocomplete="on" name="total_search">
+                    <div class="search_bar_div">
+                        <div class="search_bar_type">
+                            <div id="search_bar_type_div">
+                                <input class="search_bar_type_here" placeholder="검색단어 입력" role="combobox" aria-expanded="false" aria-autocomplete= "list" aria-activedescendant="(null)" aria-owns="" aria-label="검색" type="text" />
+                            </div>
+                            <span class="search_button_div">
+                                <button class="search_button" tabindex="-1">
+                                    <i class="fa fa-search" role="img"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+
+                <nav class="display_nav" data-nav="main" aria-label="baseline">
+                    <ul class="display_nav_div">
+                        <li class="nav_item" id="home_nav_item">
+                            <a class="nav_item_link" href="#">
+                                <i id="nav_item_icon" class="fas fa-home"> </i>
+                                    <span class="nav_item_title">홈</span>
+                            </a>
+                        </li>
+                        <li id="friend_nav_item" class="nav_item">
+                            <a class="nav_item_link" href="#">
+                                <i id="nav_item_icon" class="fas fa-users"></i>
+                                <span class="nav_item_title">동료</span>
+                            </a>
+                        </li>
+                        <li id="edu_nav_item" class="nav_item">
+                            <a class="nav_item_link" href="#">
+                                <i id="nav_item_icon" class="fas fa-university"></i>
+                                <span class="nav_item_title">학습페이지</span>
+                            </a>
+                        </li>
+                        <li id="mail_nav_item" class="nav_item">
+                            <a class="nav_item_link" href="#">
+                                <i id="nav_item_icon" class="fas fa-envelope"></i>
+                                <span class="nav_item_title">메시지</span>
+                            </a>
+                        </li>
+                        <li id="alarm_nav_item" class="nav_item">
+                            <a class="nav_item_link" href="#">
+                                <i id="nav_item_icon" class="fas fa-bell"></i>
+                                <span class="nav_item_title">알림</span>
+                            </a>
+                        </li>
+                        <li id="help_nav_item" class="nav_item">
+                            <a class="nav_item_link" href="#">
+                                <span id="nav_item_icon" class="fas fa-question-circle"></span>
+                                <span class="nav_item_title">도움말</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                    
+
+
+                <ul>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="contents">
+            <!--아래 컨텐츠 내용 전체 포함-->
+            <div class="card_div" id="first_card_div">
+                <!--상단 고정되는 부분 맨위부분과 바로아래-->
+                <div class="neptune_grid" id="first_grid">
+                    <div class="first_contents_section" id="first_section">
+                        <div id="upper_card_title"><h3>다음 단계를 진행해주세요!</h3></div>
+                        <ul id="upper_card_div">
+
+                            <!--#첫번째 상단카드-->
+                            <li tableindex="0" id="infocard1" class="infocard_addprofile">
+                                <div id="infocard2" class="infocard_contents">
+                                    <section class="infocard_contents_div">
+                                        <header class="infocard_contents_header">
+                                            <span class="infocard_contents_header_icon circle_person">
+                                                <i class="fas fa-user-circle" role="img"></i>
+                                            </span>
+                                            <h5 class="infocard_contents_header_title">프로필 추가 작성하기</h5>
+                                        </header>
+
+                                        <!--상단카드의 컨텐츠 부가설명내용-->
+                                        <article class="infocard_subtitle_div"><p class="infocard_subtitle">보다 상세한 학습경로 또는 원하는 직업을  <br />찾기 위해서 추가적인 내용을 등록해주세요.</p></article>
+
+                                        <!--상단카드의 하단 버튼내용-->
+                                        <footer class="infocard_button_div">
+                                            <button id="upprofile_button" class="infocard_button">
+                                                <a class="infocard_button_link" data-name="link_to_profile" href="#">
+                                                    <span id="infocard_button_update_profile" class="infocard_button_text">내 정보 업데이트</span>
+                                                </a>
+                                            </button>
+                                        </footer>
+                                    </section>
+                                </div>
+                            </li>
+
+                            <li tableindex="0" id="infocard1" class="infocard_addprofile">
+                                <div id="infocard2" class="infocard_contents">
+                                    <section class="infocard_contents_div">
+                                        <header class="infocard_contents_header">
+                                            <span class="infocard_contents_header_icon circle_person">
+                                                <i class="fas fa-user-plus" role="img"></i>
+                                            </span>
+                                            <h5 class="infocard_contents_header_title">학습 동료 찾기</h5>
+                                        </header>
+
+                                        <!--상단카드의 컨텐츠 부가설명내용-->
+                                        <article class="infocard_subtitle_div"><p class="infocard_subtitle">학습시에 도움을 줄 수 있는 <br />여러 동반자를 찾아보세요.</p></article>
+
+                                        <!--상단카드의 하단 버튼내용-->
+                                        <footer class="infocard_button_div">
+                                            <button id="upprofile_button" class="infocard_button">
+                                                <a class="infocard_button_link" data-name="link_to_profile" href="#">
+                                                    <span id="infocard_button_update_profile" class="infocard_button_text">친구 찾기</span>
+                                                </a>
+                                            </button>
+                                        </footer>
+                                    </section>
+                                </div>
+                            </li>
+
+
+                            <li tableindex="0" id="infocard1" class="infocard_addprofile">
+                                <div id="infocard2" class="infocard_contents">
+                                    <section class="infocard_contents_div">
+                                        <header class="infocard_contents_header">
+                                            <span class="infocard_contents_header_icon circle_person">
+                                                <i class="fas fa-question-circle" role="img"></i>
+                                            </span>
+                                            <h5 class="infocard_contents_header_title">홈페이지 더 알아보기</h5>
+                                        </header>
+
+                                        <!--상단카드의 컨텐츠 부가설명내용-->
+                                        <article class="infocard_subtitle_div"><p class="infocard_subtitle">Campus ground에서 제공하는 <br />추가적인 기능을 확인하세요.</p></article>
+
+                                        <!--상단카드의 하단 버튼내용-->
+                                        <footer class="infocard_button_div">
+                                            <button id="upprofile_button" class="infocard_button">
+                                                <a class="infocard_button_link" data-name="link_to_profile" href="#">
+                                                    <span id="infocard_button_update_profile" class="infocard_button_text">홈페이지 FAQ</span>
+                                                </a>
+                                            </button>
+                                        </footer>
+                                    </section>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div><!--//카드-->
+            </div>
+
+
+            <!--중간 주요내용-->
+
+            <div class="card_div" id="second_card">
+                <div class="neptune_grid" id="second_grid">
+                    <div class="main_card">
+                        <div class="news_story_space">
+
+
+
+                        </div>  <!--왼쪽 주요내용 관련-->
+
+                        <aside id="side_ad">
+                            <div id="adv_space">
+
+                            </div>
+                            <footer id="about_company">
+                            </footer>  <!--옆쪽 아래 회사관련 링크-->
+                        </aside>   <!--//옆쪽 광고면-->
+                    </div>      <!--//메인콘텐츠-->
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>  <!--메인내용 전체div화-->
+</body>
+</html>
